@@ -1,6 +1,7 @@
 
 #!/bin/bash
 # Simple menu hping3 script
+# Made by Obluchatel
 # Please use only for pentesting and security reasons
 # Thanks to Dennis Williamson@askubuntu.com && 0daysecurity.com
 
